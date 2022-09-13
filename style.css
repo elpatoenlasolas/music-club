@@ -10,6 +10,8 @@ body {
     border:#2D3A40 5px solid;
     border-top-right-radius: 55px;
     border-top-left-radius: 55px;
+    border-bottom-right-radius: 55px;
+    border-bottom-left-radius: 55px;
 }
 
 /** HEADER **/
@@ -396,6 +398,8 @@ footer {
     justify-content: space-between;
     align-items: center;
     bottom: 0%;
+    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 50px;
 }
 
 footer p {
@@ -450,17 +454,18 @@ footer p {
 footer h5 {
     font-size: .8rem;
     margin: 2px auto;
-    margin-left: 20px;
+    margin-left: 15px;
     margin-right: 12px;
 }
 
 .social-media {
     display: grid;
-    margin: 8px 1px;
+    margin: 8px 20px;
 }
 
 footer img {
     height: 1rem;
     width: 1rem;
 }
+
 }
