@@ -9,7 +9,6 @@ body {
     font-family: 'Noto Serif', sans-serif;
     border:#2D3A40 5px solid;
     border-top-right-radius: 55px;
-    border-top-left-radius: 55px;
 }
 
 /** HEADER **/
@@ -19,9 +18,11 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-top-right-radius: 50px;
-    border-top-left-radius: 50px;
-    width: 100%;
+    position: absolute;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    z-index: 2;
+    width: 1180px;
 }
 
 ul {
@@ -56,12 +57,14 @@ h1 {
 }
 
 @media only screen and (min-width: 380px) and (max-width: 480px) {
-   
+    body {
+        border-top-right-radius: 0px;
+    }
 
     .header {
         position: relative;
         width: 100%;
-        border-top-right-radius: 50px;
+        border-top-right-radius: 0px;
         border-bottom-right-radius: 0px;
     }
 
@@ -84,6 +87,7 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
+    border-top-right-radius: 50px;
 }
 
 .phrase {
@@ -110,7 +114,6 @@ h1 {
 
     .quote {
         border-top-right-radius: 0px;
-        border-top-left-radius: 0px;
         height: 200px;
     }
 
@@ -128,6 +131,7 @@ h1 {
         margin: auto 20px;
     }
 }
+
 /** HISTORY **/
 
 .history {
