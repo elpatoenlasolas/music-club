@@ -19,12 +19,9 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: absolute;
-    border-top-right-radius: 25px;
+    border-top-right-radius: 50px;
     border-top-left-radius: 50px;
-    border-bottom-right-radius: 25px;
-    z-index: 2;
-    width: 1180px;
+    width: 100%;
 }
 
 ul {
@@ -87,8 +84,6 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    border-top-right-radius: 50px;
-    border-top-left-radius: 50px;
 }
 
 .phrase {
