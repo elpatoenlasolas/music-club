@@ -1,0 +1,470 @@
+/** UNIVERSAL STYLES **/
+
+html {
+    font-size: 16px;
+    color: rgb(49, 49, 49);
+}
+
+body {
+    font-family: 'Noto Serif', sans-serif;
+    border:#2D3A40 5px solid;
+    border-top-right-radius: 55px;
+}
+
+/** HEADER **/
+
+.header {
+    background-color:#B5E7FF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    z-index: 2;
+    width: 1180px;
+}
+
+ul {
+    margin-right: 1rem;
+}
+
+li {
+    display: inline-flex;
+}
+
+.header a {
+    text-decoration: none;
+    color: #2D3A40;
+    font-family: 'Rampart One';
+    font-size: 1.25rem;
+    margin: 0 1rem;
+}
+
+.header a:hover {
+    text-shadow:white 0px 0px 4px, -1px -1px 2px white;
+}
+
+h1 {
+    color: #ffffff;
+    font-family: 'Rampart One';
+    font-size: 1.8rem;
+}
+
+.title {
+    margin-left: 2rem;
+    text-shadow: 1.5px 1.5px 4px #0081c2, -1.5px -1.5px 8px rgba(63, 204, 255, 0.847);
+}
+
+@media only screen and (min-width: 380px) and (max-width: 480px) {
+    body {
+        border-top-right-radius: 0px;
+    }
+
+    .header {
+        position: relative;
+        width: 100%;
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;
+    }
+
+    .title {
+        display: none;
+    }
+
+    .header a {
+        font-size: .6rem;
+        margin-left: 2px;
+    
+    }
+}
+
+/** QUOTE **/
+
+.quote {
+    height: 350px;
+    background-color: rgb(147 164 250);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-right-radius: 50px;
+}
+
+.phrase {
+    opacity: .8;
+    margin-top: 3rem;
+}
+
+.quote h4 {
+    color: white;
+    font-family: 'Marck Script', sans-serif;
+    font-size: 1.5rem;
+    text-shadow:rgb(77, 77, 77) 1px 1px 5px;
+}
+
+.quote h5 {
+    color: white;
+    font-family: 'Marck Script', sans-serif;
+    font-size: 1.3rem;
+    text-align: end;
+    text-shadow: rgb(77, 77, 77) 1px 1px 5px;
+}
+
+@media only screen and (min-width: 380px) and (max-width: 480px) {
+
+    .quote {
+        border-top-right-radius: 0px;
+        height: 200px;
+    }
+
+    .phrase {
+        margin-top: 1rem;
+    }
+
+    .quote h4 {
+        font-size: 1rem;
+        margin: auto 20px;
+    }
+
+    .quote h5 {
+        font-size: .7rem;
+        margin: auto 20px;
+    }
+}
+
+/** HISTORY **/
+
+.history {
+    height: 600px;
+    background-color: rgb(221 250 197);
+    display: flex;
+    align-items: center;
+}
+
+.history h2 {
+    margin-left: 3rem;
+    font-family: 'Rampart One';
+    font-style: italic;
+    color: #687ac9;
+}
+
+.history p {
+    margin-left: 5.5rem;
+    line-height: 2rem;
+    margin-top: 2rem;
+    color: #98a9f4;
+    font-family: 'Noto Serif';
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+
+.history-block {
+    width: 580px;
+}
+
+.history img {
+    height: 245px;
+    width: 375px;
+    margin-left: 6rem;
+    opacity: .88;
+    border-radius: 120px 45px;
+    border: 12px #ab98ff solid;
+}
+
+@media only screen and (min-width: 380px) and (max-width: 480px) {
+    
+    .history {
+        display: grid;
+        height: 850px;
+        grid-template: 220px 350px 240px / 200px;
+    }
+
+    .history h2 {
+        font-size: 1.2rem;
+        margin-bottom: 0;
+    }
+
+    .history p {
+        font-size: .9rem;
+        width: 220px;   
+        line-height: 1.3rem;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .history img {
+        height: 125.5px;
+        width: 187.5px;
+        border: 6px #ab98ff solid;
+    }
+
+}
+
+/** ABOUT **/
+
+.about {
+    height: 500px;
+    background-color: #FCCFFF; 
+    display: flex;
+    align-items: center;
+}
+
+.about p {
+    color: rgb(232, 138, 129);
+    font-family: 'Noto Serif';
+    font-size: 1.15rem;
+    text-align: center;
+    width: 700px;
+    margin: auto 50px;
+}
+
+.about img {
+    height: 285px;
+    width: 427px;
+    margin-left: 1rem;
+    opacity: .88;
+    border-radius: 45px 120px ;
+    border: 12px rgb(255, 181, 174) solid;
+}
+
+@media only screen and (min-width: 380px) and (max-width: 480px) {
+    
+    .about {
+        display: grid;
+        height: 870px;
+        grid-template: 180px 220px 350px / 200px;
+        align-items: center;
+    }
+
+    .about p {
+        margin-top: 4rem;
+        font-size: 1rem;
+        width: 220px;
+        margin-left: 5rem;
+    }
+
+    .about img {
+        margin-top: 12rem;
+        margin-left: 5rem;
+        margin-bottom: 3rem;
+        height: 142.5px;
+        width: 213.5px;
+        border: 6px rgb(255, 181, 174) solid;
+    }
+
+}
+
+/** ENROLE **/
+
+.howtoenrol {
+    height: 600px;
+    background-color: #FFE3C2;
+    opacity: 0.9;
+    background-image: url("https://i.pinimg.com/originals/a2/2c/a3/a22ca38cde39acd6da01d88eb13db4d7.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.howtoenrol h3 {
+    text-align: center;
+    color: rgb(218, 178, 60);
+    font-family: 'Rampart One';
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 2rem;
+    padding-top: 4%;
+    margin-top: 0;
+    text-shadow: rgb(163, 64, 255) 0px 0px 3px;
+}
+
+.howtoenrol p {
+    margin: 0 auto;
+    width: 900px;
+    text-align: center;
+    color: rgb(218, 178, 60);
+    font-family: 'Noto Serif';
+    line-height: 2.4rem;
+    font-weight: 400;
+    font-size: 1.2rem;
+    text-shadow: rgb(163, 64, 255) 0px 0px 3px;
+}
+
+.howoto-box {
+    display: flex grid;
+    background-color:rgb(154, 81, 81);
+    border-radius: 10px;
+    opacity: 0.88;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    margin: auto 200px;
+}
+
+@media only screen and (min-width: 380px) and (max-width: 480px) {
+
+.howtoenrol h3 {
+    font-size: 1.5rem;
+    padding-top: 14%;
+}
+
+.howtoenrol p {
+    font-size: .8rem;
+    line-height: normal;
+    width: 200px;
+}
+
+.howoto-box {
+    height: 350px;
+    margin: 0 20px;
+    padding-top: 5%;
+    margin-top: 4rem;
+}
+
+}
+
+/** CONTACT **/
+
+.contact {
+    height: 400px;
+    background-color: #c2ffee;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.contact h4 {
+    margin: 0 auto;
+    padding-bottom: 6%;
+    text-align: justify;
+    color: rgb(0, 119, 215);
+    font-family: 'Rampart One';
+    font-weight: 700;
+    font-size: 2.4rem;
+    width: 280px;
+    height: 2rem;
+    text-transform: uppercase;
+}
+
+.contact p {
+    text-align: justify;
+    color: rgb(36, 173, 247);
+    font-family: 'Noto Serif';
+    font-weight: 400;
+    font-size: 1.2rem;
+    flex-wrap: wrap;
+    margin-top: 1.95rem;
+    width: 300px;
+    height: 3.5rem;
+}
+
+.contact-info {
+    margin-top: 3.5%;
+}
+
+.sym-box {
+    width: 50px;
+    height: 220px;
+    align-self: center;
+    margin-top: 3.4rem;
+}
+
+.material-symbols-outlined {
+    height: 3.5rem;
+    color: rgb(6, 110, 194);
+    display: grid;
+    margin: .94rem auto;
+}
+
+@media only screen and (min-width: 380px) and (max-width: 480px) {
+    
+.contact h4 {
+    font-size: 1.5rem;
+    padding-top: 14%;
+}
+
+.contact p {
+    font-size: .8rem;
+}
+
+.sym-box {
+    padding-left: 7%;
+}
+
+}
+
+/** FOOTER **/
+
+footer {
+    display: flex;
+    background-color:rgb(255, 162, 154);
+    justify-content: space-between;
+    align-items: center;
+    bottom: 0%;
+}
+
+footer p {
+    font-size: .75rem;
+    color: white;
+    font-family: 'Noto Serif';
+    margin-right: 2rem;
+    text-shadow: rgb(23, 23, 23) 0px 0px 5px;
+}
+
+.social-media {
+    display: inline-flex;
+    margin: 1rem 2rem;
+}
+
+footer h5 {
+    font-size: 1rem;
+    font-family: 'Rampart One';
+    margin-left: 7.6rem;
+}
+
+footer img {
+    height: 24px;
+    width: 24px;
+    margin: 0 .5rem;
+}
+
+footer a {
+    margin: 0;
+    text-decoration: none;
+    color: white;
+    text-shadow: rgb(23, 23, 23) 0px 0px 3px;
+}
+
+
+footer a:hover {
+    text-shadow:rgba(255, 255, 255, 0.76) 0px 0px 20px;
+}
+
+@media only screen and (min-width: 380px) and (max-width: 480px) {
+    
+footer {
+    width: 100%;
+}
+
+footer p {
+    font-size: .6rem;
+    margin: auto 3  0px;
+    width: 150px;
+}
+
+footer h5 {
+    font-size: .8rem;
+    margin: 2px auto;
+    margin-left: 20px;
+    margin-right: 12px;
+}
+
+.social-media {
+    display: grid;
+    margin: 8px 1px;
+}
+
+footer img {
+    height: 1rem;
+    width: 1rem;
+}
+
+}
